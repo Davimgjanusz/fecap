@@ -1,0 +1,29 @@
+header{
+    background-color: green;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.fecap{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.op{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.fecap a{
+    color: white;
+    text-decoration: none;
+}
+
+.op a{
+    color: white;
+    text-decoration: none;
+}
