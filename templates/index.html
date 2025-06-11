@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+        <style>
+            .roboto{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: 100;
+  }
+        </style>
 </head>
-<body>
+
+<body class="roboto">
     <header>
         <h1 class="fecap"><a href="/">Fecap</a></h1>
         <div class="op">
             <h2><a href="/cursos">Cursos</a></h2>
-            <h2><a href="">Sobre</a></h2>
-            <h2><button><a href="/portal">Portal do Aluno</a></button></h2>
+            <h2><a href="/sobre">Sobre</a></h2>
+            <h2><button><a href="/portal">Portal do aluno</a></button></h2>
+            
         </div>
     </header>
 </body>
+
 </html>

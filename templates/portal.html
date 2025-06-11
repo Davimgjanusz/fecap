@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal do aluno</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/portal.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+        <style>
+            .roboto{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: 100;
+  }
+        </style>
 </head>
-<body>
+<body class="roboto">
+    <section class="principal">
+        <img src="{{ url_for('static', filename='imagens/fecap.png') }}" alt="fecap logo">
+        <br>
     <form action="/portal">
         <section class="entrada">
             <label for="matricula">Matrícula: </label>
@@ -14,7 +32,9 @@
             <label for="senha">Senha: </label>
             <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
             <input type="button" value="enviar">
+            <a href="">Esqueceu sua senha?</a>
         </section>
     </form>
+    </section>
 </body>
 </html>

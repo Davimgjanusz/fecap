@@ -1,19 +1,36 @@
-form{
-    margin-top: 25%;
+.principal {
+    height: 100vh;               /* ocupa a tela inteira */
     display: flex;
-    justify-content: center;
+    justify-content: center;     /* centraliza verticalmente */
+    align-items: center;         /* centraliza horizontalmente */
+    flex-direction: column;
 }
+
 
 .entrada{
     display: flex;
     flex-direction: column;
+    width: 300px;
     gap: 10px;
 }
 
 .entrada label{
+    color: black;
     font-size: 30px;
+    background-color: white;
 }
 
-.entrada input{
+.entrada input {
+    color: black;
     font-size: 25px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+
+.entrada a {
+    color: black !important;
+    text-decoration: none;
+    align-self: center;
+    font-size: 16px;
 }
