@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal do aluno</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/portal.css') }}">
 </head>
 <body>
     <form action="/portal">
-        <fieldset>
-            <label for="">Matrícula</label>
-        </fieldset>
+        <section class="entrada">
+            <label for="matricula">Matrícula: </label>
+            <input type="text" name="matricula" id="matricula" placeholder="Digite sua matrícula">
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        </section>
     </form>
 </body>
 </html>
