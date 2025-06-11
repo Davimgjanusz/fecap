@@ -27,3 +27,14 @@ header{
     color: white;
     text-decoration: none;
 }
+
+button {
+    padding: 10px 20px;
+    background-color: darkolivegreen;
+    color: black;
+    border: none;
+    border-radius: 5px;
+  
+    /* sombra na borda */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }

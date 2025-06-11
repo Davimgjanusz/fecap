@@ -9,3 +9,11 @@ form{
     flex-direction: column;
     gap: 10px;
 }
+
+.entrada label{
+    font-size: 30px;
+}
+
+.entrada input{
+    font-size: 25px;
+}
